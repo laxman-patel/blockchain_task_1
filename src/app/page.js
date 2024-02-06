@@ -1,95 +1,51 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import data from "./data.json";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [listData, useListData] = useState(data);
+
+  const modifyList = (e) => {
+    const search = e.target.value;
+
+    const filteredData = data.nfts.filter((nft) => {
+      return nft.name.toLowerCase().includes(search.toLowerCase());
+    });
+
+    useListData({ nfts: filteredData });
+  };
+
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <h1 className={styles.title}>NFT Store</h1>
+      <p className={styles.description}>Welcome to the NFT Store</p>
+      <button className={styles.eth_btn}>Connect Ethereum Wallet</button>
+      <input
+        onChange={(e) => modifyList(e)}
+        type="text"
+        placeholder="Search..."
+      />
+      <ul>
+        {listData.nfts.map((nft) => (
+          <li key={nft.id} className={styles.card}>
+            <Link href={`/products/${nft.id}`}>
+              <Image
+                src={nft.image_link}
+                alt={nft.name}
+                width={300}
+                height={300}
+              />
+              <h2>{nft.name}</h2>
+              <p>{nft.description}</p>
+              <p>{nft.price} USD</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </main>
   );
 }

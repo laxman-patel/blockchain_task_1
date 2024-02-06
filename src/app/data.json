@@ -1,0 +1,109 @@
+{
+  "nfts": [
+    {
+      "id": 1,
+      "name": "Everydays: The First 5000 Days",
+      "image_link": "https://upload.wikimedia.org/wikipedia/en/d/d4/Everydays%2C_the_First_5000_Days.jpg",
+      "price": "$69.3 million",
+      "description": "A digital artwork by Beeple, consisting of 5,000 unique images created over 13 years."
+    },
+    {
+      "id": 2,
+      "name": "CryptoPunk #7523",
+      "image_link": "https://upload.wikimedia.org/wikipedia/en/0/07/Cryptopunks_general.jpg",
+      "price": "$11.8 million",
+      "description": "One of the rare CryptoPunks, known for its distinctive pixel art style."
+    },
+    {
+      "id": 3,
+      "name": "Clock",
+      "image_link": "https://openseauserdata.com/files/21343e69ed81b0ab585de644e5d5e634.png",
+      "price": "$52.7 million",
+      "description": "An abstract digital artwork by Pak."
+    },
+    {
+      "id": 4,
+      "name": "The First Tweet",
+      "image_link": "https://www.forbesindia.com/media/images/2022/Apr/img_182743_jackdorseysfirsttweetnftresellsforonly280.jpg",
+      "price": "$2.9 million",
+      "description": "Jack Dorsey's first tweet ever, minted as an NFT."
+    },
+    {
+      "id": 5,
+      "name": "Mona Lisa Remix",
+      "image_link": "https://cdn.openart.ai/stable_diffusion/29f4cc21307e1d5bc7011f14ec867595f2d34a38_2000x2000.webp",
+      "price": "$6.5 million",
+      "description": "A playful reinterpretation of the iconic Mona Lisa painting."
+    },
+    {
+      "id": 6,
+      "name": "Virtual Real Estate",
+      "image_link": "https://synodus.com/wp-content/uploads/2022/12/What-is-real-estate-NFTs-1024x598.webp",
+      "price": "$3.2 million",
+      "description": "A parcel of virtual land in a metaverse, complete with digital buildings."
+    },
+    {
+      "id": 7,
+      "name": "Pixelated Dreams",
+      "image_link": "https://i.seadn.io/gae/fRVExfhzP1I4Jqq4NxEkVevA5ve946z5LmP1s1RuiaaCUmI4_wyIPDShqHxpGv3cSNU_Volci90JhM28odq1juZfWNBioRREi7SAXA?auto=format&dpr=1&w=3840",
+      "price": "$1.1 million",
+      "description": "A mesmerizing pixel art animation that captivated collectors."
+    },
+    {
+      "id": 8,
+      "name": "AI-Generated Masterpiece",
+      "image_link": "https://qph.cf2.quoracdn.net/main-qimg-25a2d83e422567bbd82125d991e6ef3b",
+      "price": "$8.7 million",
+      "description": "An artwork generated entirely by artificial intelligence algorithms."
+    },
+    {
+      "id": 9,
+      "name": "Celestial Symphony",
+      "image_link": "https://aiartshop.com/cdn/shop/files/celestial-symphony-ai-painting-758.webp?v=1694697149",
+      "price": "$4.3 million",
+      "description": "A cosmic-themed audiovisual NFT that resonates with the universe."
+    },
+    {
+      "id": 10,
+      "name": "Golden Dragons",
+      "image_link": "https://f8n-production-collection-assets.imgix.net/0x92f5728e9C58C194Be2765316A4Ce63e7016e662/1/nft.png?q=80&auto=format%2Ccompress&cs=srgb&w=3000&h=3000&fit=max",
+      "price": "$7.9 million",
+      "description": "A pair of majestic golden dragon sculptures in the digital realm."
+    },
+    {
+      "id": 11,
+      "name": "Quantum Quilt",
+      "image_link": "https://news.artnet.com/app/news-upload/2023/05/Generations-Hero-Physical-Quilt-Made-from-NFT-Anna-Lucia-left-Mary-Margeret-Pettway-right.jpeg",
+      "price": "$5.6 million",
+      "description": "A quilt-like arrangement of quantum particles, defying reality."
+    },
+    {
+      "id": 12,
+      "name": "Neon Nights",
+      "image_link": "https://i.redd.it/ndd3ip7clvua1.jpg",
+      "price": "$3.8 million",
+      "description": "A neon-infused cityscape that pulses with electric energy."
+    },
+    {
+      "id": 13,
+      "name": "Metaverse Avatar",
+      "image_link": "https://imageio.forbes.com/specials-images/imageserve/613df8e8d679a21b766a1636/bigbun-2/960x0.jpg?height=711&width=711&fit=bounds",
+      "price": "$1.5 million",
+      "description": "A customizable digital avatar for navigating virtual worlds."
+    },
+    {
+      "id": 14,
+      "name": "Ethereal Forest",
+      "image_link": "https://ipfs.io/ipfs/QmRDK97AUHRKS6jG7ghXVSm6xvnLr4w27RLJ3fhbgeoLvV/nft.jpg",
+      "price": "$2.3 million",
+      "description": "A serene forest scene with mystical creatures hidden among the trees."
+    },
+    {
+      "id": 15,
+      "name": "Holographic Harmony",
+      "image_link": "https://dgbijzg00pxv8.cloudfront.net/7a9a9f33-c72a-4f24-8e2d-095e6b3fe99b/000000-0000000002/78459120243906814064392470815919264518484054610617102083369547128495457601825/ITEM_PREVIEW1.jpg",
+      "price": "$6.8 million",
+      "description": "A holographic symphony of light and sound, transcending dimensions."
+    }
+  ]
+}
